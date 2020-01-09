@@ -1,0 +1,290 @@
+/*
+Theme Name: CLAD
+Author: equipo clad
+Author URI: https://wordpress.org/
+Description: Tema exclusivo para uso de la organización clad
+Version: 1.0
+Text Domain: twentyseventeen
+Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al lado derecho),ini-text-first(se usa para las entradas de noticias al lado derecho arriba),ini-text-two(se usa para las entradas de noticias al lado derecho abajo),slider (se usa en entradas de imagenes del silder carrusel)
+*/
+
+ /* Add a gray background color and some padding to the footer */
+@media  screen and (max-width: 800px){
+	  
+      #redes{
+        margin-left:0px;
+        margin-bottom: 5px;
+        width: 660px;
+      }
+        
+}
+
+
+#pages{min-height: 500px; }
+
+.zoom{
+	transition: transform .4s;
+}
+
+.zoom:hover{
+	transform: scale(1.1);
+}
+
+.banner-text {
+    border-left: 2px solid #BE2525;
+    padding-left: 2px;
+}
+
+.size{ font-size: 1.4rem; }
+
+p{
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+.val{
+	margin-bottom: -8px;
+}
+
+.top{
+	margin-top: 0px;
+}
+
+
+.btn-light{
+  color: #041e42;
+}
+
+.card-body{
+  padding: 10px;	
+  background-color: white;
+}
+.card-body p{ font-size: 0.8rem;}
+
+.card-text{
+  color:  #041e42;
+}
+
+
+.nav-item:hover{
+  background: #D4D5DE;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(4,30,66, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(4,30,66, 0.5);
+}
+
+/*end toggler color icon*/
+
+.line-nav-l{
+  width: 20%;
+  background-color: #041e42;
+}
+
+.line-nav-r{
+  height: 1px;
+  width: 35%;
+  margin-left: 10px;
+  margin-right: 0px;
+  background-color: #041e42;
+}
+
+#principal{
+  background-color: #041e42;
+  background: linear-gradient(to bottom, #041e42 30%, #d5dbdd);
+}
+
+
+.pages-images{
+  width: 875px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+#sidebar{
+  
+}
+
+.paneld{
+  background-color: #041e42;
+  background: linear-gradient(-90deg, #041e42 60%, #d5dbdd);
+  height: 150px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.content-l{
+  background-color: white;
+  height: 140px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+.content-r{
+  background-color: white;
+  height: 140px;
+  margin-left: 1px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+#copyright{
+
+  background-color: #041e42;
+  color: white;
+}
+
+.picture{
+  width: 135px;
+  height: 120px;
+}
+/*footer style */
+
+footer{
+  background-color: #f2f2f2;
+  padding: 0px;
+  background: linear-gradient(0deg, #D4D5DE 90%, #F9FAFC);
+  padding-bottom: 0px;
+}
+
+.text-address{
+	font-size: .5rem;
+	padding: 0px 5px 0px 0px;
+}
+.text-phone{
+	font-size: .6rem;
+	padding: 0px 5px 0px 0px;
+}
+.bordes{
+    border-right: 3px solid white;
+}
+.text-copyright{
+	font-size: .8rem;	
+}
+.line{
+	height: 2px;
+  	margin-left: 10px;
+  	margin-right: 5px;
+}
+
+.l-line{
+  width: 36%;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.r-line{
+ width: 15%;
+ background-color: white;
+}
+
+.redes{
+margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+} 
+
+.idioma{
+	width: 40px;
+  	height: 25px;
+ 	margin-left: 10px;
+}
+
+
+
+/* PRUEBA PARA ESTILO DE MENU FOOTER */
+
+#main-nav      {
+        width: 90%;
+        height: 30px; /* configura a la altura 
+ que desea para su menú */
+        margin: 0px; /* darle un poco de 
+ espacio*/
+        margin-bottom: -16px;
+}
+#main-nav ul   {
+        margin: 0; padding: 0;
+         }
+
+#main-nav li   {
+        display: block;
+        float: left;
+        line-height: 30px; /* Esto ha de ser igual 
+ al #main-nav height */
+        height: 30px; /* Esto ha de ser igual 
+al #main-nav height */
+        margin: -5px; padding: 0; /* only needed 
+if you don't have a reset */
+        position: relative; /* esto es necesario 
+con el fin de posicionar los submenús */
+}
+#main-nav li a {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+        background: #4F535A;
+        color: white;
+}
+
+#main-nav li a:hover {
+        color: #fff;
+        background: #21242A;
+        text-decoration: none;
+}
+
+.nav-vertical {
+  margin-left: 15px;
+  width: 400px;
+}
+
+.nav-vertical ul{
+  list-style: none;
+  display: block;
+}
+
+.nav-vertical a {
+  position: relative;
+  background-color: #041e42;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align:right;
+}
+
+.nav-vertical a:hover {
+  background-color: #C0C0C0;
+  text-decoration: none;
+  color: #041e42;
+}
+
+.nav-vertical a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.nav-vertical ul li ul{
+  padding: 0px;
+  border: 1px solid #041e42;
+  display: none;
+}
+
+.nav-vertical ul li ul li a{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background: white;
+  color: #041e42;
+}
+
+
+.nav-vertical ul .active > a{
+ background: #C0C0C0; 
+  color: #041e42;
+}
