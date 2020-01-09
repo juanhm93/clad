@@ -43,7 +43,7 @@
           $j = 1;
           query_posts('category_name=ini-text-first');
        if(have_posts() ) : while (have_posts() ): the_post(); ?>
-          <div class="col <?php if($j == 1){ echo 'content-l';}else{echo 'content-r';} ?> zoom"><a class="card-text" href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a></div>
+          <div class="col <?php if($j == 1){ echo 'content-l';}else{echo 'content-r';} ?> zoom"><a class="card-text" href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a></div>
            <?php $j++; endwhile; endif; ?>
         </div>
 
@@ -52,7 +52,7 @@
           $j = 1;
           query_posts('category_name=ini-text-two');
        if(have_posts() ) : while (have_posts() ): the_post(); ?>
-          <div class="col <?php if($j == 1){ echo 'content-l';}else{echo 'content-r';} ?> zoom"><a class="card-text" href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a></div>
+          <div class="col <?php if($j == 1){ echo 'content-l';}else{echo 'content-r';} ?> zoom"><a class="card-text" href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a></div>
            <?php $j++; endwhile; endif; ?>
         </div>
       

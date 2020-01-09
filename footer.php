@@ -35,7 +35,7 @@
 
       <div class="col-sm-4 p-0"><p class="text-address text-justify">Av. Ppal. de los Chorros, cruce con Av. 6. Casa CLAD, Urb. Los Chorros, Caracas 1071, Venezuela. Apartado postal 4181. Caracas 1010A. Venezuela</p>
     </div>
-      <div class="col-sm-2 p-0 "><p class="text-phone ">(58212) 2709211/Fax: (58212) 2709214</p></div>
+      <div class="col-sm-2 p-0 "><p class="text-phone ">(58212) 2709211<br>Fax: (58212) 2709214</p></div>
       <div class="col-sm-1 p-0"><p class="text-phone">clad@clad.org <br> www.clad.org</p></div>
     
     </div>
