@@ -55,7 +55,7 @@ function clad_setup(){
         // agregando imagenes
       if(function_exists('add_theme_support')){
         add_theme_support('post-thumbnails');
-        add_image_size('slider_principal',460,215, true);
+        add_image_size('slider_principal',460 ,215, true);
         add_image_size('logo',200,50, true);
         add_image_size('redes-f',25,25, true);
         add_image_size('idioma-f',40,25, true); 
@@ -83,3 +83,9 @@ function my_register_sidebars() {
     );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
+
+ //no perder calidad en las imagenes
+    function ejr_jpeg_quality () {
+      return 100;
+      }
+    add_filter ('jpeg_quality', 'ejr_jpeg_quality');

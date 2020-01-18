@@ -288,3 +288,9 @@ con el fin de posicionar los submenús */
  background: #C0C0C0; 
   color: #041e42;
 }
+
+/* SLIDER PRUEBA TAMANO */
+
+.carousel-inner > .carousel-item > img {
+  height: 100vh;
+}

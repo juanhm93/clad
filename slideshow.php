@@ -6,7 +6,7 @@
             if(have_posts() ) : while (have_posts() ): the_post(); ?>
             <div class="carousel-item <?php if($i == 1) echo 'active'  ?>">
              <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
-            the_post_thumbnail('slider_principal', array( 'class' => 'd-block w-100' ));
+            the_post_thumbnail('large', array( 'class' => 'd-block w-100' ));
               } ?></a> 
             </div>
             <?php $i++; endwhile; endif; ?>

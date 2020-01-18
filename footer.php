@@ -20,6 +20,7 @@
     </div>
     </div>  
     <div class="col-sm-2 pl-0 d-print-inline-block" id="redes">
+    <a href="https://clad.us8.list-manage.com/subscribe?u=47a37def72cba6a120d74a3a3&id=2f9ee7099b"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/BOTON.png' ); ?>"></a>
        <a href="https://www.linkedin.com/in/cladorg"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/20.png' ); ?>"></a>
           <a href="https://twitter.com/CLAD_Org"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/21.png' ); ?>"></a>
           <a href="https://www.facebook.com/clad.fb"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/22.png' ); ?>"></a>

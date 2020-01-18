@@ -7,9 +7,10 @@
 <div class="row">
   <div id="principal" class="col-sm-8 pt-2 pl-4 ">
     <!-- CAROUSEL SLIDE  -->
+     <div class="sliderp">
+          <?php include(TEMPLATEPATH.'/slideshow.php'); ?> 
+     </div>
      
-     <?php include(TEMPLATEPATH.'/slideshow.php'); ?>
-  
     <!-- END CARROSEL SLIDE-->
 
   <div class="row">
@@ -60,8 +61,8 @@
 
   </div>
 
-    <div class="well col-md-12">
-         <iframe width="100%" height="170" src="https://www.youtube.com/embed/7ajKSdpZ6DE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    <div class="well col-md-12 p-2" width="100%" height="170">
+    <?php  get_sidebar(); ?>
     </div>
   </div>
 </div>
