@@ -60,9 +60,9 @@
 
   </div>
 
-    <div class="well col-md-12">
-         <iframe width="100%" height="170" src="https://www.youtube.com/embed/7ajKSdpZ6DE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-    </div>
+  <div class="well col-md-12 p-2" width="100%" height="170">
+    <?php  get_sidebar(); ?>
+  </div>
   </div>
 </div>
 <hr>
