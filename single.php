@@ -3,7 +3,7 @@
 <!-- PRINCIPAL CONTAINER -->
 <div class="container-fluid dis">
 	<div class="row">
-		<div class="col-sm-8 p-3">
+		<div id="pages" class="col-sm-8 p-3">
 
 		<?php	if(have_posts() ) : while (have_posts() ): the_post(); ?>
 				<h5 class="card-text"><?php the_title() ?></h5>
