@@ -9,9 +9,22 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
 */
 
  /* Add a gray background color and some padding to the footer */
-@media  screen and (max-width: 800px){
-	  
+@media  screen and (max-width: 1200px){
+	   
+     .paneld{
+      margin-top: 10px !important;
+     }
+      #main-nav{
+        margin-left: 20px !important;
+        margin-top: auto !important;
+      } 
+      .bloque{
+        display: block !important;
+        width: auto !important;
+      }
+      
       #redes{
+        margin-top: auto !important;
         margin-left:0px;
         margin-bottom: 5px;
         width: 660px;
