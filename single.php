@@ -16,9 +16,36 @@
 		<?php endwhile; endif; ?>	
 		</div>
 		<div id="sidebar" class="col-sm-4">
-			<div class="nav-vertical">
+			<div class="nav-vertical">			  
 				<?php get_sidebar(); ?>
 			</div>
+			<div class="row">
+					<!--pruebas para las singles pages -->
+					    <?php
+					    debug_zval_dump( get_permalink());
+					    if (is_category('../ini-post-photos')) {
+						// Cuando se muestre la página con slug 'hola-mundo'
+							query_posts('category_name=ini-post-photos');
+						    if(have_posts() ) : while (have_posts() ): the_post(); ?>
+						    <div id="lateralDerechoSingle" class="col-xl-11 col-lg-11 col-md-11 col-12 d-flex zoom mb-2">
+
+						      <!--  img-responsive picture   -->
+						      
+						      <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
+						            the_post_thumbnail('post-thumbnails', array( 'class' => 'img-responsive picture' ));
+						        } ?></a>
+
+						      <div class="card-body card-body-lateral p-1">   
+						          <a class="card-text"  href="<?php the_permalink(); ?>"><?php the_excerpt();  ?>    </a> 
+						        </div>  
+						      </div>
+						    <?php endwhile; endif; } ?>
+						
+			</div>
+
+							 
+					    			<!--pruebas para las singles pages -->
+			
 		</div>
 	</div>
 	

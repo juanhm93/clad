@@ -354,3 +354,13 @@ con el fin de posicionar los submenús */
 .letrasSinOpacidad {
   position: relative;
 }
+
+#lateralDerechoSingle{
+ 
+  background: #E5E8EE;
+}
+.card-body-lateral{
+  background: #E5E8EE;
+}
+
+/*E5E8EE  EFF2F7*/
