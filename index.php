@@ -17,7 +17,7 @@
     <?php 
     query_posts('category_name=ini-post-photos');
     if(have_posts() ) : while (have_posts() ): the_post(); ?>
-    <div class="col-xl-4 col-lg-2 col-md-6 pt-2 featured-property-half d-flex zoom">
+    <div class="col-xl-4 col-lg-6 col-md-6 col-12 pt-2 featured-property-half d-flex zoom">
 
       <!--  img-responsive picture   -->
       

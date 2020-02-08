@@ -9,7 +9,24 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
 */
 
  /* Add a gray background color and some padding to the footer */
-@media  screen and (max-width: 1200px){
+
+@media screen and (max-device-width: 480px) {
+    
+    #main-nav {
+        height: 100px !important;
+      }
+    #main-nav li{
+      float: none !important;
+      border-radius: 1px solid black;
+    }
+    #redes {
+      height: 38px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 500px){
 	   
      .paneld{
       margin-top: 10px !important;
@@ -50,9 +67,16 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
 
 .size{ font-size: 1.4rem; }
 
+a{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
 p{
-  font-family: Helvetica;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
   font-size: 1rem;
+}
+a:link {
+  text-decoration: none !important;
 }
 
 .val{

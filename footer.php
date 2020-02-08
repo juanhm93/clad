@@ -2,7 +2,7 @@
 <!-- FOOTER -->
 <footer class="container-fluid text-center " id="footers">
   <div class="row">
-    <div class="col-xl-10 col-lg-9 col-md-8 top p-0">
+    <div class="col-xl-10 col-lg-9 col-md-8 col-12 top p-0">
       <div class="d-flex flex-column flex-md-row align-items-center  border-bottom box-shadow">
        <div id="idioma">
           <img alt="<?php bloginfo("name"); ?>" src="<?php echo (get_template_directory_uri().'/images/esp.png' ); ?>" name="idioma" width="200" height="50" class="idioma p-1">
@@ -19,7 +19,7 @@
           <hr class="line r-line d-none d-xl-block">
     </div>
     </div>  
-    <div class="col-xl-2 col-lg-3 col-md-4 p-0 d-print-inline-block" id="redes">
+    <div class="col-xl-2 col-lg-3 col-md-4 col-12 p-0 d-print-inline-block" id="redes">
        <a href="https://www.linkedin.com/in/cladorg"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/20.png' ); ?>"></a>
           <a href="https://twitter.com/CLAD_Org"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/21.png' ); ?>"></a>
           <a href="https://www.facebook.com/clad.fb"><img class="redes" src="<?php echo (get_template_directory_uri().'/images/22.png' ); ?>"></a>
