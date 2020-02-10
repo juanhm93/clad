@@ -22,8 +22,8 @@
 			<div class="row">
 					<!--pruebas para las singles pages -->
 					    <?php
-					    debug_zval_dump( get_permalink());
-					    if (is_category('../ini-post-photos')) {
+					    
+					    if (is_single('destacado')) {
 						// Cuando se muestre la página con slug 'hola-mundo'
 							query_posts('category_name=ini-post-photos');
 						    if(have_posts() ) : while (have_posts() ): the_post(); ?>
@@ -41,7 +41,7 @@
 						      </div>
 						    <?php endwhile; endif; } ?>
 						
-			</div>
+			</div>    
 
 							 
 					    			<!--pruebas para las singles pages -->
