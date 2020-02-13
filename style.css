@@ -291,10 +291,11 @@ con el fin de posicionar los submenús */
   background-color: #041e42;
   color: white;
   display: block;
-  padding: 12px;
+  padding: 5px;
   text-decoration: none;
   text-align:right;
   opacity: 0.9;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .nav-vertical a:hover {
@@ -306,7 +307,7 @@ con el fin de posicionar los submenús */
   /*color: #041e42;*/
 }
 
-.nav-vertical a.active {
+.nav-vertical .active {
   background-color: #4CAF50;
   color: white;
 }
@@ -317,6 +318,7 @@ con el fin de posicionar los submenús */
   display: none;
 }
 .nav-vertical li{
+  border-radius: 6px 0px 0px 6px;
   margin: 1px;
   border-right: 5px solid grey;
   border-bottom: 2px solid grey;
