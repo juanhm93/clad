@@ -23,7 +23,7 @@
 					<!--pruebas para las singles pages -->
 					    <?php
 					    
-					    if (is_single('destacado')) {
+					    //if (is_single('destacado')) {
 						// Cuando se muestre la página con slug 'hola-mundo'
 							query_posts('category_name=ini-post-photos');
 						    if(have_posts() ) : while (have_posts() ): the_post(); ?>
@@ -39,7 +39,7 @@
 						          <a class="card-text"  href="<?php the_permalink(); ?>"><?php the_excerpt();  ?>    </a> 
 						        </div>  
 						      </div>
-						    <?php endwhile; endif; } ?>
+						    <?php endwhile; endif;/*}*/ ?>
 						
 			</div>    
 

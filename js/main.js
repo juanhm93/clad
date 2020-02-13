@@ -25,7 +25,7 @@ changeSize(mediumBp);
 
 jQuery(document).ready(function(){
 
-	/*jQuery('.menu li:has(ul)').click(function(e){
+	jQuery('.menu li:has(ul)').click(function(e){
 	
 		console.log('estamos aqui');
 		if (jQuery(this).hasClass('active')) {
@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 			jQuery(this).addClass('active');
 			jQuery(this).children('ul').slideDown();
 		}
-	});*/
+	});
 
 	jQuery('li').click(function(e){ 
 		
@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
 			 
 			} else{
 				console.log('llegamos aqui1');
-				//jQuery('li').removeClass('active');	
+				jQuery('li').removeClass('active');	
 				console.log(jQuery(this).addClass('active'));
 			}	
 		}
