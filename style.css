@@ -294,6 +294,7 @@ con el fin de posicionar los submenús */
   padding: 12px;
   text-decoration: none;
   text-align:right;
+  opacity: 0.9;
 }
 
 .nav-vertical a:hover {
@@ -301,6 +302,7 @@ con el fin de posicionar los submenús */
   opacity: 0.9;
   color: white;
   text-decoration: none;
+  border-right: 25px solid grey;
   /*color: #041e42;*/
 }
 
@@ -314,7 +316,11 @@ con el fin de posicionar los submenús */
   border: 1px solid #041e42;
   display: none;
 }
-
+.nav-vertical li{
+  margin: 1px;
+  border-right: 5px solid grey;
+  border-bottom: 2px solid grey;
+}
 .nav-vertical ul li ul li a{
   padding-top: 4px;
   padding-bottom: 4px;
@@ -363,4 +369,4 @@ con el fin de posicionar los submenús */
   background: #E5E8EE;
 }
 
-/*E5E8EE  EFF2F7*/
+/*E5E8EE  EFF2F7 color de botones modo clad: #30598c*/
