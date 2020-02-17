@@ -15,7 +15,7 @@
             <div class="carousel-item <?php if($i == 1) echo 'active'  ?>">
              <a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {
 
-            the_post_thumbnail('large', array( 'class' => 'd-block w-100' ));
+            the_post_thumbnail('full', array( 'class' => 'd-block w-100' ));
               } ?></a>
               <div class="carousel-caption d-none d-md-block">
                 <h4><?php the_title() ?></h4>

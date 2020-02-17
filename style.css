@@ -22,6 +22,9 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
     #redes {
       height: 38px !important;
     }
+    img{
+    	height: 120px;
+    }
 
 
 }
