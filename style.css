@@ -408,3 +408,38 @@ pre code ul li a img{
   display: inline-block;
   border: 1px solid red;
 }
+
+.lcp_catlist {
+
+}
+
+.lcp_catlist li{
+  background-color: #e5e8ee;
+  display: inline-block;
+  width: 400px;
+  height: 123px;
+  list-style: none; 
+  border: 1px solid black;
+}
+.lcp_catlist li code a img{
+  float: left;
+  margin-right: 10px;
+  margin-top: -16px;
+}
+
+.title-hidden{
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+.lcp_catlist li p{
+  margin-top: 0px;
+  padding-top: 4px;
+  padding-right: 7px;
+}
+.valores{
+ position: absolute;
+ /*top: 73px;*/
+ left: 200px;
+ font-weight: bold;
+}
