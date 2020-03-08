@@ -83,3 +83,25 @@ function my_register_sidebars() {
     );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
+
+
+function get_list_categories(){
+  return get_list_subcategories(0);
+}
+
+function get_list_subcategories($parent){
+  $result ="";
+
+  $args = array(
+    'taxonomy' => "category",
+    'parent' => $parent,
+    'hide_empty' => 0
+  );
+
+  $categories = get_categories($args);
+
+  foreach ($categories as $category) 
+      $result .= '<option value="'.$category->cat_ID.'">'.$category->cat_name.'||| <option>';
+    return $result;
+}
+

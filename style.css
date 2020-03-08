@@ -375,3 +375,36 @@ con el fin de posicionar los submenús */
 }
 
 /*E5E8EE  EFF2F7 color de botones modo clad: #30598c*/
+
+pre code ul {
+   word-wrap: break-word !important;
+  display: block;
+}
+pre code ul li {
+  display: inline-block;
+  width: 400px;
+  height: 123px;
+  list-style: none; 
+  border: 1px solid black;
+}
+
+pre code ul li a img{
+  float: left;
+  margin-right: 10px;
+}
+
+.variables{
+  text-align: center;
+  width: 250px;
+  height: auto;
+  padding-top: 0px; 
+  border: 1px solid blue;
+  float: left;
+  word-wrap: break-word !important;
+  display: block;
+}
+
+.card-textsi{
+  display: inline-block;
+  border: 1px solid red;
+}
