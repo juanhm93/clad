@@ -8,7 +8,7 @@
 		<?php	if(have_posts() ) : while (have_posts() ): the_post(); ?>
 				<h5 class="card-text"><?php the_title() ?></h5>
 				<hr>
-				
+					
 				<?php if ( has_post_thumbnail() ) {
 		            the_post_thumbnail('post-thumbnails', array( 'class' => 'pages-images' ));
 		        } ?>
