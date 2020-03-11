@@ -311,13 +311,12 @@ con el fin de posicionar los submenús */
 }
 
 .nav-vertical .active {
-  background-color: #4CAF50;
+  background-color: grey;
   color: white;
 }
 
 .nav-vertical ul li ul{
   padding: 0px;
-  border: 1px solid #041e42;
   display: none;
 }
 .nav-vertical li{
@@ -329,8 +328,9 @@ con el fin de posicionar los submenús */
 .nav-vertical ul li ul li a{
   padding-top: 4px;
   padding-bottom: 4px;
-  background: white;
-  color: #041e42;
+  background: #041e42;
+  color: white;
+  opacity: 0.5;
 }
 
 
@@ -446,4 +446,7 @@ pre code ul li a img{
  padding-left: 144px;
  left: 158px;
  font-weight: bold;
+}
+.activado{
+  display: block !important;
 }

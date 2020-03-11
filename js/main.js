@@ -20,14 +20,34 @@ const changeSize = mql => {
 mediumBp.addListener(changeSize);
 changeSize(mediumBp);
 
+function crear_sessionStorage(recursoID){
 
+	sessionStorage.setItem("li_ID",recursoID)
 
+}
+function obtener_sessionStorage(){
+	if(sessionStorage.getItem('li_ID')){
+		let recuso_session = sessionStorage.getItem('li_ID')
+		jQuery("#"+recuso_session).addClass('active').parent().addClass('activado')
+	}
+	
+}
 
 jQuery(document).ready(function(){
 
-	jQuery('.menu li:has(ul)').click(function(e){
+	obtener_sessionStorage()
 	
-		console.log('estamos aqui');
+	jQuery('.menu-item-has-children').click(function(e){
+		jQuery(this).children('ul').slideToggle('slow')
+	})
+	jQuery('.sub-menu li').click(function(e){
+		var recurso_id = jQuery(this).attr('id')
+		crear_sessionStorage(recurso_id)
+	})
+	jQuery('ul').click(function(p){
+		p.stopPropagation()
+	})
+	/*jQuery('.menu li:has(ul)').click(function(e){
 		if (jQuery(this).hasClass('active')) {
 			jQuery(this).removeClass('active');
 			jQuery(this).children('ul').slideUp();
@@ -50,7 +70,6 @@ jQuery(document).ready(function(){
 				console.log(jQuery(this).addClass('active'));
 			}	
 		}
-		
-	});
+	});*/
 
 });//end document
