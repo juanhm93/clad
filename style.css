@@ -301,7 +301,7 @@ con el fin de posicionar los submenús */
   border-radius: 5px 0px 0px 5px;
 }
 
-.nav-vertical a:hover {
+.nav-vertical ul li a:hover {
   /*background-color: #C0C0C0;*/
   opacity: 0.9;
   color: white;
@@ -309,10 +309,16 @@ con el fin de posicionar los submenús */
   border-right: 25px solid grey;
   /*color: #041e42;*/
 }
-
+.nav-vertical ul li ul li a:hover {
+  /*background-color: #C0C0C0;*/
+  opacity: 0.9;
+  color: #000;
+  text-decoration: none;
+  border-right: 25px solid grey;
+  /*color: #041e42;*/
+}
 .nav-vertical .active {
-  background-color: grey;
-  color: white;
+  font-weight: bold;
 }
 
 .nav-vertical ul li ul{
@@ -328,14 +334,12 @@ con el fin de posicionar los submenús */
 .nav-vertical ul li ul li a{
   padding-top: 4px;
   padding-bottom: 4px;
-  background: #041e42;
-  color: white;
-  opacity: 0.5;
+  background: #d4d5de;
+  color: #000;
 }
 
 
 .nav-vertical ul .active > a{
- background: #C0C0C0; 
   color: #041e42;
 }
 

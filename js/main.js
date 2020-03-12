@@ -20,56 +20,53 @@ const changeSize = mql => {
 mediumBp.addListener(changeSize);
 changeSize(mediumBp);
 
-function crear_sessionStorage(recursoID){
-
+function crear_sessionStorage(recursoID,recurso_Href){
 	sessionStorage.setItem("li_ID",recursoID)
-
+	sessionStorage.setItem("li_Href",recurso_Href)
 }
 function obtener_sessionStorage(){
 	if(sessionStorage.getItem('li_ID')){
-		let recuso_session = sessionStorage.getItem('li_ID')
-		jQuery("#"+recuso_session).addClass('active').parent().addClass('activado')
+		let recuso_session_id = sessionStorage.getItem('li_ID')	
+		return recuso_session_id
+	} 	
+}
+
+function obtener_link_sessionStorage(){
+	if(sessionStorage.getItem('li_Href')){
+		let recuso_session_href = sessionStorage.getItem('li_Href')
+		return recuso_session_href
 	}
-	
 }
 
 jQuery(document).ready(function(){
 
-	obtener_sessionStorage()
-	
+	var session_id = obtener_sessionStorage()
+	var session_href = obtener_link_sessionStorage()
+	var pathname = window.location;
+	if(session_href == pathname){
+		jQuery("#"+session_id).addClass('active').parent().addClass('activado')
+	}else{
+		jQuery("#"+session_id).removeClass('active').parent().removeClass('activado')
+	}
+		
+	jQuery('li').click(function(){
+		if(jQuery(this).children().length < 2){
+			if(jQuery(this).parent().hasClass("sub-menu")){
+				var recurso_id = jQuery(this).attr('id')
+				var recurso_href = jQuery(this).children('a').attr('href')
+				crear_sessionStorage(recurso_id,recurso_href)	
+			}
+		}
+	})
 	jQuery('.menu-item-has-children').click(function(e){
 		jQuery(this).children('ul').slideToggle('slow')
 	})
 	jQuery('.sub-menu li').click(function(e){
-		var recurso_id = jQuery(this).attr('id')
-		crear_sessionStorage(recurso_id)
+		
 	})
 	jQuery('ul').click(function(p){
 		p.stopPropagation()
 	})
-	/*jQuery('.menu li:has(ul)').click(function(e){
-		if (jQuery(this).hasClass('active')) {
-			jQuery(this).removeClass('active');
-			jQuery(this).children('ul').slideUp();
-		} else{
-			jQuery('.menu li ul').slideUp();
-			jQuery('.menu li').removeClass('active');
-			jQuery(this).addClass('active');
-			jQuery(this).children('ul').slideDown();
-		}
-	});
-
-	jQuery('li').click(function(e){ 
-		
-		if(!jQuery(this).children('ul').length){
-			if (jQuery(this).hasClass('active')) {
-			 
-			} else{
-				console.log('llegamos aqui1');
-				jQuery('li').removeClass('active');	
-				console.log(jQuery(this).addClass('active'));
-			}	
-		}
-	});*/
-
+	
+	
 });//end document
