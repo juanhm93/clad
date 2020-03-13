@@ -4,7 +4,7 @@
 <!-- PRINCIPAL CONTAINER -->
 <div class="container-fluid dis">
 	<div class="row">
-		<div id="pages" class="col-sm-9	 pt-3 pl-3">
+		<div id="pages" class="col-sm-8	 pt-3 pl-3">
 		<?php	if(have_posts() ) : while (have_posts() ): the_post(); ?>
 				<h5 class="card-text"><?php the_title() ?></h5>
 				<hr>
@@ -19,7 +19,7 @@
 		
 		</div>
 	
-		<div id="sidebar" class="col-sm-3">
+		<div id="sidebar" class="col-sm-4">
 			<div class="nav-vertical">
 				<?php  get_sidebar(); ?>
 				

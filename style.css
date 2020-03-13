@@ -121,7 +121,7 @@ a:link {
 /*end toggler color icon*/
 
 .line-nav-l{
-  width: 11%;
+  width: 16%;
   background-color: #041e42;
 }
 
@@ -414,14 +414,14 @@ pre code ul li a img{
 }
 
 .lcp_catlist {
-  padding-left: 0px;
+  /*padding-left: 0px;*/
 }
 
 .lcp_catlist li{
   background-color: #e5e8ee;
   display: inline-block;
-  width: 323px;
-  margin: 1px;
+  width: 48%;
+  margin: 2px;
   height: 123px;
   list-style: none;
   transition: transform .4s;
@@ -453,4 +453,7 @@ pre code ul li a img{
 }
 .activado{
   display: block !important;
+}
+.act{
+  font-weight: bold;
 }
