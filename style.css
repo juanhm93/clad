@@ -457,3 +457,16 @@ pre code ul li a img{
 .act{
   font-weight: bold;
 }
+
+.carousel-caption h4, .carousel-caption p{
+text-align:center;
+color: #fff;
+font-family: impact;
+letter-spacing: 0;
+text-shadow: -2px -2px 2px #041e42, 2px -2px 2px #041e42, -2px 2px 2px #041e42, 2px 2px 2px #041e42;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 40px !important;
+  height: 44px !important;
+}

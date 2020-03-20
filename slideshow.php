@@ -4,7 +4,7 @@
        <?php 
             $j = 0;
             if(have_posts() ) : while (have_posts() ): the_post(); ?>
-          <li data-target="#carouselExampleCaptions" data-slide-to="<?php $j ?>" <?php if($j == 0) echo 'class=active'?>></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="<?php echo $j ?>" <?php if($j == 0) echo 'class=active'?>></li>
           <?php $j++; endwhile; endif; ?> 
        </ol>
           <div class="carousel-inner">
