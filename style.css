@@ -145,10 +145,6 @@ a:link {
   margin-bottom: 10px;
 }
 
-#sidebar{
-  
-}
-
 .paneld{
   background-color: #041e42;
   background: linear-gradient(-90deg, #041e42 60%, #d5dbdd);
@@ -414,13 +410,15 @@ pre code ul li a img{
 }
 
 .lcp_catlist {
-  /*padding-left: 0px;*/
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .lcp_catlist li{
   background-color: #e5e8ee;
-  display: inline-block;
-  width: 48%;
+  /* display: inline-block; */
+  width: 32%;
   margin: 2px;
   height: 123px;
   list-style: none;
@@ -461,7 +459,7 @@ pre code ul li a img{
 .carousel-caption h4, .carousel-caption p{
 text-align:center;
 color: #fff;
-font-family: impact;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 letter-spacing: 0;
 text-shadow: -2px -2px 2px #041e42, 2px -2px 2px #041e42, -2px 2px 2px #041e42, 2px 2px 2px #041e42;
 }

@@ -22,10 +22,10 @@ mediumBp.addListener(changeSize);
 changeSize(mediumBp);
 
 
-function menu_footer_size(){
-	var c = document.getElementById("navbarTogglerDemo01").children
-	console.log('unos vomitos '+c)		
-}
+// function menu_footer_size(){
+// 	var c = document.getElementById("navbarTogglerDemo01").children
+// 	console.log('unos vomitos '+c)		
+// }
 
 
 
@@ -68,7 +68,7 @@ function obtenerLinkSessionStorageNoChildren(){
 
 jQuery(document).ready(function(){
 	
-	menu_footer_size()
+	// menu_footer_size()
 	var session_id = obtener_sessionStorage()
 	var session_href = obtener_link_sessionStorage()
 	var IdNoChildren = obtenerSessionStorageNoChildren()
