@@ -9,9 +9,42 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
 */
 
  /* Add a gray background color and some padding to the footer */
-@media  screen and (max-width: 800px){
-	  
+
+@media screen and (max-device-width: 480px) {
+    
+    #main-nav {
+        height: 100px !important;
+      }
+    #main-nav li{
+      float: none !important;
+      border-radius: 1px solid black;
+    }
+    #redes {
+      height: 38px !important;
+    }
+    img{
+    	height: 120px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 500px){
+	   
+     .paneld{
+      margin-top: 10px !important;
+     }
+      #main-nav{
+        margin-left: 20px !important;
+        margin-top: auto !important;
+      } 
+      .bloque{
+        display: block !important;
+        width: auto !important;
+      }
+      
       #redes{
+        margin-top: auto !important;
         margin-left:0px;
         margin-bottom: 5px;
         width: 660px;
@@ -37,9 +70,16 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
 
 .size{ font-size: 1.4rem; }
 
+a{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
 p{
-  font-family: Helvetica;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
   font-size: 1rem;
+}
+a:link {
+  text-decoration: none !important;
 }
 
 .val{
@@ -81,7 +121,7 @@ p{
 /*end toggler color icon*/
 
 .line-nav-l{
-  width: 20%;
+  width: 16%;
   background-color: #041e42;
 }
 
@@ -105,10 +145,6 @@ p{
   margin-bottom: 10px;
 }
 
-#sidebar{
-  
-}
-
 .paneld{
   background-color: #041e42;
   background: linear-gradient(-90deg, #041e42 60%, #d5dbdd);
@@ -119,7 +155,7 @@ p{
 
 .content-l{
   background-color: white;
-  height: 140px;
+  height: 140px;  
   margin-left: 10px;
   border-radius: 3px;
 }
@@ -151,11 +187,11 @@ footer{
 }
 
 .text-address{
-	font-size: .5rem;
+	font-size: .8rem;
 	padding: 0px 5px 0px 0px;
 }
 .text-phone{
-	font-size: .6rem;
+	font-size: .8rem;
 	padding: 0px 5px 0px 0px;
 }
 .bordes{
@@ -185,7 +221,7 @@ footer{
 margin-top: 5px;
   width: 25px;
   height: 25px;
-  margin-left: 10px;
+  margin-left: 1px;
 } 
 
 .idioma{
@@ -254,37 +290,181 @@ con el fin de posicionar los submenús */
   background-color: #041e42;
   color: white;
   display: block;
-  padding: 12px;
+  padding: 5px;
   text-decoration: none;
   text-align:right;
+  opacity: 0.9;
+  border-radius: 5px 0px 0px 5px;
 }
 
-.nav-vertical a:hover {
-  background-color: #C0C0C0;
-  text-decoration: none;
-  color: #041e42;
-}
-
-.nav-vertical a.active {
-  background-color: #4CAF50;
+.nav-vertical ul li a:hover {
+  /*background-color: #C0C0C0;*/
+  opacity: 0.9;
   color: white;
+  text-decoration: none;
+  border-right: 25px solid grey;
+  /*color: #041e42;*/
+}
+.nav-vertical ul li ul li a:hover {
+  /*background-color: #C0C0C0;*/
+  opacity: 0.9;
+  color: #000;
+  text-decoration: none;
+  border-right: 25px solid grey;
+  /*color: #041e42;*/
+}
+.nav-vertical .active {
+  font-weight: bold;
 }
 
 .nav-vertical ul li ul{
   padding: 0px;
-  border: 1px solid #041e42;
   display: none;
 }
-
+.nav-vertical li{
+  border-radius: 6px 0px 0px 6px;
+  margin: 1px;
+  border-right: 5px solid grey;
+  border-bottom: 2px solid grey;
+}
 .nav-vertical ul li ul li a{
   padding-top: 4px;
   padding-bottom: 4px;
-  background: white;
-  color: #041e42;
+  background: #d4d5de;
+  color: #000;
 }
 
 
 .nav-vertical ul .active > a{
- background: #C0C0C0; 
   color: #041e42;
+}
+
+.marcaDeAgua {
+  background-image: url("images/4.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: 10px 50px;
+}
+
+.marcaDeAgua:before{
+  content: "";
+  width: 100%;
+  height: 37%;
+  margin-top: 50px; 
+  background-color: white;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.boletin {
+  margin-top: 5px;
+  height: 27px;
+  margin-left: 1px;
+}
+
+.letrasSinOpacidad {
+  position: relative;
+}
+
+#lateralDerechoSingle{
+ 
+  background: #E5E8EE;
+}
+.card-body-lateral{
+  background: #E5E8EE;
+}
+
+/*E5E8EE  EFF2F7 color de botones modo clad: #30598c*/
+
+pre code ul {
+   word-wrap: break-word !important;
+  display: block;
+}
+pre code ul li {
+  display: inline-block;
+  width: 400px;
+  height: 123px;
+  list-style: none; 
+  border: 1px solid black;
+}
+
+pre code ul li a img{
+  float: left;
+  margin-right: 10px;
+}
+
+.variables{
+  text-align: center;
+  width: 250px;
+  height: auto;
+  padding-top: 0px; 
+  border: 1px solid blue;
+  float: left;
+  word-wrap: break-word !important;
+  display: block;
+}
+
+.card-textsi{
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.lcp_catlist {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lcp_catlist li{
+  background-color: #e5e8ee;
+  /* display: inline-block; */
+  width: 32%;
+  margin: 2px;
+  height: 123px;
+  list-style: none;
+  transition: transform .4s;
+}
+.lcp_catlist li:hover{
+  transform: scale(1.1); 
+}
+ .lcp_catlist li a{
+  float: left;
+  margin-right: 6px;
+  margin-top: -23px;
+}
+
+.title-hidden{
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+.lcp_catlist li p{
+  margin-top: 0px;
+  padding-right: 7px;
+}
+.valores{
+ /*position: absolute;*/
+ /*top: 73px;*/
+ padding-left: 144px;
+ left: 158px;
+ font-weight: bold;
+}
+.activado{
+  display: block !important;
+}
+.act{
+  font-weight: bold;
+}
+
+.carousel-caption h4, .carousel-caption p{
+text-align:center;
+color: #fff;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+letter-spacing: 0;
+text-shadow: -2px -2px 2px #041e42, 2px -2px 2px #041e42, -2px 2px 2px #041e42, 2px 2px 2px #041e42;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 40px !important;
+  height: 44px !important;
 }
