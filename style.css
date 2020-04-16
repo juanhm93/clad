@@ -25,11 +25,38 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
     img{
     	height: 120px;
     }
+    .lcp_catlist li{
+      width: 100% !important;
+    }
 
 
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 500px){
+@media only screen and (max-width: 900px) and (min-width: 500px){
+  .paneld{
+    margin-top: 10px !important;
+   }
+    #main-nav{
+      margin-left: 20px !important;
+      margin-top: auto !important;
+    } 
+    .bloque{
+      display: block !important;
+      width: auto !important;
+    }
+    
+    #redes{
+      margin-top: auto !important;
+      margin-left:0px;
+      margin-bottom: 5px;
+      width: 660px;
+    }
+  .lcp_catlist li{
+    width: 75% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px){
 	   
      .paneld{
       margin-top: 10px !important;
@@ -48,6 +75,9 @@ Tags: ini-post-photos(se usa para las entradas de imagen pequeña con escrito al
         margin-left:0px;
         margin-bottom: 5px;
         width: 660px;
+      }
+      .lcp_catlist li{
+        width: 49% !important;
       }
         
 }
@@ -413,27 +443,35 @@ pre code ul li a img{
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .lcp_catlist li{
   background-color: #e5e8ee;
   width: 43%;
   margin: 2px;
-  height: 144px;
+  /* height: 144px; */
   list-style: none;
   transition: transform .4s;
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: flex-end; */
+  /* align-content: flex-start; */
+  /* flex-wrap: wrap; */
   flex-shrink: 0;
 }
 .lcp_catlist li:hover{
   transform: scale(1.1); 
 }
  .lcp_catlist li a{
-  float: left;
+  /* float: left; */
 }
 .title-notice{
-  float: right;
+  align-self: start;
+  /* float: right;
   width: 233px;
-  height: 127px;
+  height: 127px; */
+ 
 }
 .title-notice a{
   color: #041e42;
@@ -448,9 +486,20 @@ pre code ul li a img{
   padding-right: 7px;
 }
 .valores{
-  padding: 0px 10px;
+  width: 14px;
+  align-self: flex-start;
+  flex-direction: column;
+  /* padding: 0px 10px;
  font-weight: bold; 
- float: left;
+ float: left; */
+ order: -1;
+ word-wrap: break-word;
+ text-align: center;
+ font-size: 16px;
+ background: #041e42;
+ line-height: 0.9;
+ color: white;
+ font-weight: bold;
 }
 .activado{
   display: block !important;
