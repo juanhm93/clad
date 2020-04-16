@@ -450,28 +450,18 @@ pre code ul li a img{
   background-color: #e5e8ee;
   width: 43%;
   margin: 2px;
-  /* height: 144px; */
   list-style: none;
   transition: transform .4s;
   display: flex;
   flex-direction: row-reverse;
-  /* justify-content: flex-end; */
-  /* align-content: flex-start; */
-  /* flex-wrap: wrap; */
   flex-shrink: 0;
 }
 .lcp_catlist li:hover{
   transform: scale(1.1); 
 }
- .lcp_catlist li a{
-  /* float: left; */
-}
+
 .title-notice{
-  align-self: start;
-  /* float: right;
-  width: 233px;
-  height: 127px; */
- 
+  align-self: start; 
 }
 .title-notice a{
   color: #041e42;
@@ -489,17 +479,14 @@ pre code ul li a img{
   width: 14px;
   align-self: flex-start;
   flex-direction: column;
-  /* padding: 0px 10px;
- font-weight: bold; 
- float: left; */
- order: -1;
- word-wrap: break-word;
- text-align: center;
- font-size: 16px;
- background: #041e42;
- line-height: 0.9;
- color: white;
- font-weight: bold;
+  order: -1;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 16px;
+  background: #041e42;
+  line-height: 0.9;
+  color: white;
+  font-weight: bold;
 }
 .activado{
   display: block !important;
